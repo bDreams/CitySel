@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .wrap {
+        width: 500px;
+        height: 42px;
+        margin: 100px auto 0;
+    }
+    
+    /* .city-option {
+        width: 100%;
+        height: 42px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .city-option-item {
+        position: relative;
+        float: left;
+        width: 48%;
+        height: 100%;
+        background-color: #fff;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .city-option-item::before,
+    .city-option-item::after {
+        content: '';
+        position: absolute;
+        top: 15px;
+        width: 1px;
+        height: 10px;
+        background-color: #e5e5e5;
+        cursor: pointer;
+    }
+    
+    .city-option-item::before {
+        right: 10px;
+        -webkit-transform: rotateZ(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotateZ(45deg);
+    }
+    
+    .city-option-item::after {
+        right: 17px;
+        -webkit-transform: rotateZ(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotateZ(-45deg);
+    }
+    
+    .city-option-city {
+        float: right;
+    }
+    
+    .city-option-item input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #666;
+        cursor: pointer;
+        border: 1px solid #e5e5e5;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .city-option-item ul {
+        display: none;
+        position: absolute;
+        top: 42px;
+        left: 0;
+        z-index: 12;
+        width: 100%;
+        max-height: 210px;
+        overflow-y: auto;
+        border: 1px solid #e5e5e5;
+        background-color: #fff;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .city-option-item li {
+        height: 30px;
+        line-height: 30px;
+        text-indent: 10px;
+        color: #333;
+        font-size: 14px;
+    }
+    
+    .city-option-item li:hover {
+        background-color: #00a6e3;
+        color: #fff;
+        cursor: pointer;
+    } */
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/city.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- <div class="city-option">
+            <div class="city-option-item city-option-province">
+                <input type="text" name="" value="省" readonly="true">
+            </div>
+            <div class="city-option-item city-option-city">
+                <input type="text" name="" value="市" readonly="true">
+            </div>
+        </div> -->
+    </div>
+    <script src="js/citySel.js"></script>
+    <script type="text/javascript">
+    new CitySel({
+        cont: '.wrap'
+    })
+    </script>
+</body>
+
+</html>
